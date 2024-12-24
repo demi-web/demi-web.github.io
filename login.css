@@ -1,0 +1,18 @@
+.login {
+    margin-top: 7rem;
+}
+.login-container {
+    border-radius: 3rem;
+    box-shadow: 5px 10px 20px 20px rgba(225, 193, 7, 0.3);
+}
+
+.signup {
+    margin-top: 7rem;
+    border-radius: 2rem;
+;
+}
+
+.signup-container {
+    border-radius: 3rem;
+    box-shadow: 5px 10px 20px 20px rgba(225, 193, 7, 0.3);
+}

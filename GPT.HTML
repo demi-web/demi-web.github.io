@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Anchor link with id="p1" -->
+    <a href="#" id="p1">
+      <div class="card" style="width: 25rem;">
+        <img src="1.png" class="card-img-top" alt="Card image">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </a>
+
+    <div class="col-md-4 property-details text-light">
+      <h3 class="p-5 text-warning text-center">Property Details</h3>
+      <div class="row" id="p-details" style="display: none;">
+        <div class="col-md-12">
+          <div class="img">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="PINNACLE IMAGES/EXTERIOR 2.webp" class="d-block w-100" alt="Exterior view 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="PINNACLE IMAGES/EXTERIOR 1.jpeg" class="d-block w-100" alt="Exterior view 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="PINNACLE IMAGES/house 2.webp" class="d-block w-100" alt="House view">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 details">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          </ul>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vel incidunt voluptatum tempora, sit totam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <!-- JavaScript at the end of the body -->
+  <script>
+    document.getElementById('p1').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default anchor behavior
+      const details = document.getElementById('p-details');
+      details.innerHTML = '<div class="col-md-12 details text-warning bg-black" style="color: red;"> <h1>Lorem ipsum dolor sit amet.</h1><ul><li style="margin-bottom: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li> <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li><li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li></ul> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vel incidunt voluptatum tempora, sit totam.</p></div>'; // Set inner HTML
+      details.style.display = 'block'; // Show the message
+    });
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

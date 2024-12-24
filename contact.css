@@ -1,0 +1,33 @@
+.contact-container {
+    margin-top: 10rem;
+    border-radius: 2rem;
+}
+
+.contact-left {
+    border-radius: 3rem;
+}
+
+.contact__socials {
+    color: yellow;
+    list-style: none;
+    padding-top: 6rem;
+    
+    
+    justify-content: center;
+    align-items: center;
+
+}
+.contact__socials li i {
+    color: RGB(255 193 7);
+    
+}
+ 
+.contact__socials li i:hover {
+    color: yellow;
+    font-size: larger;
+}
+
+.contact-item:hover {
+    color: yellow;
+    font-size: large;
+}

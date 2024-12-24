@@ -1,0 +1,19 @@
+.p {
+    margin-top: 10rem;
+}
+
+.p-form {
+    border-radius: 2rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    height: 100vh;
+    scrollbar-width: none; 
+
+}
+
+.p-details {
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    height: 100vh;
+    scrollbar-width: none; 
+}
